@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="D_B_ParkingConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="D_B_ParkingConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.D_B_ParkingConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="D_B_ParkingConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select t2.Nom,t2.matricule,t2.Marque,t2.Type,t2.Carburant,t2.Organisme,t2.Service,t1.designation,t1.Numbers,t1.kilometrage,t1.fournisseur,t1.nn
+ from test1 t1,TB_G t2 where t1.matricule=t2.matricule </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nom" DataSetColumn="Nom" />
+              <Mapping SourceColumn="matricule" DataSetColumn="matricule" />
+              <Mapping SourceColumn="Marque" DataSetColumn="Marque" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Carburant" DataSetColumn="Carburant" />
+              <Mapping SourceColumn="Organisme" DataSetColumn="Organisme" />
+              <Mapping SourceColumn="Service" DataSetColumn="Service" />
+              <Mapping SourceColumn="designation" DataSetColumn="designation" />
+              <Mapping SourceColumn="Numbers" DataSetColumn="Numbers" />
+              <Mapping SourceColumn="kilometrage" DataSetColumn="kilometrage" />
+              <Mapping SourceColumn="fournisseur" DataSetColumn="fournisseur" />
+              <Mapping SourceColumn="nn" DataSetColumn="nn" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="matricule" msprop:Generator_ColumnVarNameInTable="columnmatricule" msprop:Generator_ColumnPropNameInRow="matricule" msprop:Generator_ColumnPropNameInTable="matriculeColumn" msprop:Generator_UserColumnName="matricule">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Marque" msprop:Generator_ColumnVarNameInTable="columnMarque" msprop:Generator_ColumnPropNameInRow="Marque" msprop:Generator_ColumnPropNameInTable="MarqueColumn" msprop:Generator_UserColumnName="Marque" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Carburant" msprop:Generator_ColumnVarNameInTable="columnCarburant" msprop:Generator_ColumnPropNameInRow="Carburant" msprop:Generator_ColumnPropNameInTable="CarburantColumn" msprop:Generator_UserColumnName="Carburant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Organisme" msprop:Generator_ColumnVarNameInTable="columnOrganisme" msprop:Generator_ColumnPropNameInRow="Organisme" msprop:Generator_ColumnPropNameInTable="OrganismeColumn" msprop:Generator_UserColumnName="Organisme" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Service" msprop:Generator_ColumnVarNameInTable="columnService" msprop:Generator_ColumnPropNameInRow="Service" msprop:Generator_ColumnPropNameInTable="ServiceColumn" msprop:Generator_UserColumnName="Service" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="designation" msprop:Generator_ColumnVarNameInTable="columndesignation" msprop:Generator_ColumnPropNameInRow="designation" msprop:Generator_ColumnPropNameInTable="designationColumn" msprop:Generator_UserColumnName="designation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numbers" msprop:Generator_ColumnVarNameInTable="columnNumbers" msprop:Generator_ColumnPropNameInRow="Numbers" msprop:Generator_ColumnPropNameInTable="NumbersColumn" msprop:Generator_UserColumnName="Numbers" type="xs:int" minOccurs="0" />
+              <xs:element name="kilometrage" msprop:Generator_ColumnVarNameInTable="columnkilometrage" msprop:Generator_ColumnPropNameInRow="kilometrage" msprop:Generator_ColumnPropNameInTable="kilometrageColumn" msprop:Generator_UserColumnName="kilometrage" type="xs:double" minOccurs="0" />
+              <xs:element name="fournisseur" msprop:Generator_ColumnVarNameInTable="columnfournisseur" msprop:Generator_ColumnPropNameInRow="fournisseur" msprop:Generator_ColumnPropNameInTable="fournisseurColumn" msprop:Generator_UserColumnName="fournisseur" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nn" msprop:Generator_ColumnVarNameInTable="columnnn" msprop:Generator_ColumnPropNameInRow="nn" msprop:Generator_ColumnPropNameInTable="nnColumn" msprop:Generator_UserColumnName="nn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:matricule" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

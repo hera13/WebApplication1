@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="D_B_ParkingConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="D_B_ParkingConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.D_B_ParkingConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="D_B_ParkingConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select tb2.matricule,tb2.N,tb2.Nom,tb1.designation,tb1.Numbers,tb2.Marque,tb2.Type,tb1.fournisseur from fiche_signa tb1,TB_G tb2 where tb1.matricule = tb2.matricule</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="matricule" DataSetColumn="matricule" />
+              <Mapping SourceColumn="N" DataSetColumn="N" />
+              <Mapping SourceColumn="Nom" DataSetColumn="Nom" />
+              <Mapping SourceColumn="designation" DataSetColumn="designation" />
+              <Mapping SourceColumn="Numbers" DataSetColumn="Numbers" />
+              <Mapping SourceColumn="Marque" DataSetColumn="Marque" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="fournisseur" DataSetColumn="fournisseur" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="matricule" msprop:Generator_ColumnVarNameInTable="columnmatricule" msprop:Generator_ColumnPropNameInRow="matricule" msprop:Generator_ColumnPropNameInTable="matriculeColumn" msprop:Generator_UserColumnName="matricule">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="N" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnN" msprop:Generator_ColumnPropNameInRow="N" msprop:Generator_ColumnPropNameInTable="NColumn" msprop:Generator_UserColumnName="N" type="xs:int" />
+              <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="designation" msprop:Generator_ColumnVarNameInTable="columndesignation" msprop:Generator_ColumnPropNameInRow="designation" msprop:Generator_ColumnPropNameInTable="designationColumn" msprop:Generator_UserColumnName="designation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Numbers" msprop:Generator_ColumnVarNameInTable="columnNumbers" msprop:Generator_ColumnPropNameInRow="Numbers" msprop:Generator_ColumnPropNameInTable="NumbersColumn" msprop:Generator_UserColumnName="Numbers" type="xs:int" minOccurs="0" />
+              <xs:element name="Marque" msprop:Generator_ColumnVarNameInTable="columnMarque" msprop:Generator_ColumnPropNameInRow="Marque" msprop:Generator_ColumnPropNameInTable="MarqueColumn" msprop:Generator_UserColumnName="Marque" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fournisseur" msprop:Generator_ColumnVarNameInTable="columnfournisseur" msprop:Generator_ColumnPropNameInRow="fournisseur" msprop:Generator_ColumnPropNameInTable="fournisseurColumn" msprop:Generator_UserColumnName="fournisseur" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:matricule" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
